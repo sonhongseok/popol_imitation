@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VOGUE</title>
+
+  <!-- 제이쿼리 불러오기  -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+  <!-- 테일윈드 css 불러오기 -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- 폰트어썸 불러오기 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- 스와이퍼 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+  <!-- 공통 css 연결 -->
+  <link rel="stylesheet" href="style/style.css">
+
+  <!-- 공통 js 연결 -->
+  <script defer src="script/script.js"></script>
+
+</head>
+
+<body>
+  <header class="pc-top-bar h-[209px] flex items-center">
+    <div class="con w-full h-[120px]  mx-auto max-w-[1300px] ">
+      <div class="flex">
+        <div class="flex-1"></div>
+        <div class="flex-1">
+          <a href="#" class="logo flex justify-center">
+            <img src="images/logo.svg" alt="로고이미지">
+          </a>
+        </div>
+        <div class="flex-1 side-nav justify-center items-center font-bold">
+          <div class="side-nav-1 flex justify-center items-center">
+            <div class="lang-sal">
+              <a class="text-[20px]" href="#">KOREA</a>
+              <ul>
+                <li><a href="https://en.vogue.me/" target="_blank">ARABIA</a></li>
+                <li><a href="https://www.vogue.com.au/" target="_blank">Australia</a></li>
+                <li><a href="https://vogue.globo.com/" target="_blank">BRASIL</a></li>
+                <li><a href="https://www.vogue.co.uk/" target="_blank">BRITAIN</a></li>
+                <li><a href="http://www.vogue.com.cn/" target="_blank">China</a></li>
+                <li><a href="https://www.vogue.cz/" target="_blank">CZECHOSLOVAKIA</a></li>
+                <li><a href="https://www.vogue.es/" target="_blank">ESPAÑA</a></li>
+                <li><a href="https://www.vogue.fr/" target="_blank">France</a></li>
+                <li><a href="https://www.vogue.de/" target="_blank">Germany</a></li>
+                <li><a href="https://vogue.gr/" target="_blank">Greece</a></li>
+                <li><a href="https://www.voguehk.com/zh/" target="_blank">Hong Kong</a></li>
+                <li><a href="https://www.vogue.in/" target="_blank">India</a></li>
+                <li><a href="https://www.vogue.it/" target="_blank">ITALIA</a></li>
+                <li><a href="https://www.vogue.co.jp/" target="_blank">Japan</a></li>
+                <li><a href="https://www.vogue.mx/" target="_blank">MÉXICO</a></li>
+                <li><a href="https://www.vogue.nl/" target="_blank">NEDERLAND</a></li>
+                <li><a href="https://vogue.ph/" target="_blank">Philippines</a></li>
+                <li><a href="https://www.vogue.pl/" target="_blank">POLSKA</a></li>
+                <li><a href="https://www.vogue.pt/" target="_blank">Portugal</a></li>
+                <li><a href="https://www.voguescandinavia.com/" target="_blank">SCANDINAVIA</a></li>
+                <li><a href="https://vogue.sg/" target="_blank">SINGAPORE</a></li>
+                <li><a href="https://www.vogue.com.tw/" target="_blank">Taiwan</a></li>
+                <li><a href="https://www.vogue.co.th/" target="_blank">Thailand</a></li>
+                <li><a href="https://vogue.com.tr/" target="_blank">TÜRKIYE</a></li>
+                <li><a href="https://vogue.ua/" target="_blank">Ukraine</a></li>
+                <li><a href="https://www.vogue.com/" target="_blank">UNITED STATES</a></li>
+              </ul>
+            </div>
+            <a class="subscribe-1" href="https://www.magazineshop.co.kr/" target="_blank">구독하기</a>
+          </div>
+          <div class="side-bar-btn">
+            <span class="flex h-full text-[2rem] cursor-pointer">
+              <i class="fa-solid fa-bars"></i>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div>
+        <nav class="pc-top-bar-menu flex mt-3 justify-center">
+          <ul class="flex">
+            <li><a href="#">FASHION</a></li>
+            <li><a href="#">BEAUTY</a></li>
+            <li><a href="#">LIFESTYLE</a></li>
+            <li><a href="#">CULTURE</a></li>
+            <li><a href="#">VIDEO</a></li>
+            <li><a href="#">RUNWAY</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <section class="section-top-img">
+    <div class="con mx-auto">
+      <img class="block w-full" src="images/section-1.jpg" alt="메인이미지">
+    </div>
+
+    <section class="section-img-2">
+      <h2 class="tit con mx-auto mt-20">Today’s Stories</h2>
+      <div class="con flex mx-auto gap-x-[50px] mt-8">
+        <a href="#" class="main-img w-full">
+          <img src="images/section-2.jpg" alt="배너이미지">
+        </a>
+        <div class="post-list">
+          <ul class="flex-grid">
+            <li>
+              <a href="#">
+                <img class="w-full" src="images/section-2-1.jpg" alt="배너이미지">
+                <div class="content">
+                  <span class="category">셀러브리티 스타일</span>
+                  <h3 class="subtitle">올가을 다리가 길어 보이는 청바지 한 벌</h3>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img class="w-full" src="images/section-2-2.jpeg" alt="배너이미지">
+                <div class="content">
+                  <span class="category">셀러브리티 스타일</span>
+                  <h3 class="subtitle">우아하게 혹은 섹시하게! 홀터넥은 지효처럼</h3>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img class="w-full" src="images/section-2-3.jpeg" alt="배너이미지">
+                <div class="content">
+                  <span class="category">셀럽 뉴스</span>
+                  <h3 class="subtitle">마돈나와 브리트니 스피어스, 다시 한 무대에 설까?</h3>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img class="w-full" src="images/section-2-4.webp" alt="배너이미지">
+                <div class="content">
+                  <span class="category">패션 트렌드</span>
+                  <h3 class="subtitle">올가을엔 발 편한 부츠가 유행한다</h3>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-img-3">
+      <div class="con mx-auto">
+        <h2 class="tit text-[40px] font-bold">BEST STORIES</h2>
+
+        <div class="swiper-btn-box">
+          <div class="swiper-btn swiper-btn__prev">
+            <span>
+              <img src="images/sl_arrow.svg" alt="슬라이드방향">
+            </span>
+          </div>
+          <div class="swiper-btn swiper-btn__next active">
+            <span>
+              <img src="images/sl_arrow.svg" alt="슬라이드방향">
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="swiper swiper-con">
+        <ul class="swiper-wrapper">
+          <li class="swiper-slide">
+            <a href="#">
+              <div class="img-box">
+                <img src="images/slide1.webp" alt="배너이미지">
+              </div>
+              <div class="content">
+                <p class="category">패션 트렌드</p>
+                <h3 class="subtitle">연청? 진청? 가을에 가장 잘 어울리는 청바지 컬러</h3>
+              </div>
+            </a>
+          </li>
+          <li class="swiper-slide">
+            <a href="#">
+              <div class="img-box">
+                <img src="images/slide2.jpeg" alt="배너이미지">
+              </div>
+              <div class="content">
+                <p class="category">셀러브리티 스타일</p>
+                <h3 class="subtitle">쇼트커트와 단발 사이, 자유로운 매력을 보여주는 셀럽 5</h3>
+              </div>
+            </a>
+          </li>
+          <li class="swiper-slide">
+            <a href="#">
+              <div class="img-box">
+                <img src="images/slide3.jpeg" alt="배너이미지">
+              </div>
+              <div class="content">
+                <p class="category">셀럽 뉴스</p>
+                <h3 class="subtitle">‘마스크걸’ 베일에 싸였던 김모미의 정체</h3>
+              </div>
+            </a>
+          </li>
+          <li class="swiper-slide">
+            <a href="#">
+              <div class="img-box">
+                <img src="images/slide4.jpg" alt="배너이미지">
+              </div>
+              <div class="content">
+                <p class="category">셀러브리티 스타일</p>
+                <h3 class="subtitle">유행 시작! 제니가 신은 스칸디 걸의 애착 슈즈</h3>
+              </div>
+            </a>
+          </li>
+          <li class="swiper-slide">
+            <a href="#">
+              <div class="img-box">
+                <img src="images/slide5.jpg" alt="배너이미지">
+              </div>
+              <div class="content">
+                <p class="category">패션 트렌드</p>
+                <h3 class="subtitle">회색 치마의 놀라운 재능</h3>
+              </div>
+            </a>
+          </li>
+          <li class="swiper-slide">
+            <a href="#">
+              <div class="img-box">
+                <img src="images/slide6.jpg" alt="배너이미지">
+              </div>
+              <div class="content">
+                <p class="category">패션 아이템</p>
+                <h3 class="subtitle">다리는 길쭉하게, 배는 납작하게! 가을 제철 스커트</h3>
+              </div>
+            </a>
+          </li>
+          <li class="swiper-slide">
+            <a href="#">
+              <div class="img-box">
+                <img src="images/slide7.jpg" alt="배너이미지">
+              </div>
+              <div class="content">
+                <p class="category">셀러브리티 스타일</p>
+                <h3 class="subtitle">올가을 다리가 길어 보이는 청바지 한 벌</h3>
+              </div>
+            </a>
+          </li>
+          <li class="swiper-slide">
+            <a href="#">
+              <div class="img-box">
+                <img src="images/slide8.jpg" alt="배너이미지">
+              </div>
+              <div class="content">
+                <p class="category">셀러브리티 스타일</p>
+                <h3 class="subtitle">청바지 & 흰 셔츠, 올가을 런던 걸의 정석</h3>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="section-img-3__bg"></div>
+    </section>
+
+    <section class="section-img-4">
+      <div class="con mx-auto">
+        <h2 class="tit">
+          MUST READ
+        </h2>
+        <div class="post_list list_v2 con">
+          <ul class="flex">
+            <li>
+              <a href="#">
+                <div class="img-box">
+                  <img src="images/section-4-1.jpg" alt="배너이미지">
+                </div>
+                <div class="content">
+                  <p class="category">아트</p>
+                  <h3 class="subtitle">다음 주로 다가온 #프리즈서울2023 VIP 이벤트 미리 보기</h3>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="img-box">
+                  <img src="images/section-4-2.jpg" alt="배너이미지">
+                </div>
+                <div class="content">
+                  <p class="category">아트</p>
+                  <h3 class="subtitle">사색하는 인간의 그림, 다니엘 맥키니 #여성예술가17</h3>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="img-box">
+                  <img src="images/section-4-3.jpg" alt="배너이미지">
+                </div>
+                <div class="content">
+                  <p class="category">아트</p>
+                  <h3 class="subtitle">서울에 온 화이트 큐브</h3>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="img-box">
+                  <img src="images/section-4-4.jpg" alt="배너이미지">
+                </div>
+                <div class="content">
+                  <p class="category">아트</p>
+                  <h3 class="subtitle">시적인 고독을 마주하는 전시 #최욱경</h3>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-img-5">
+      <div class="inner con mx-auto mt-9">
+        <div class="hot-box">
+          <h2>HOT KEYWORD</h2>
+          <p class="tit">
+            <a href="#">#여성예술가17</a>
+          </p>
+        </div>
+        <div class="post_list list_v2">
+          <ul class="flex">
+            <li>
+              <a href="">
+                <div class="img-box">
+                  <img src="images/section-5-1.jpg" alt="배너이미지">
+                </div>
+                <div class="content">
+                  <p class="category">아트</p>
+                  <h3 class="subtitle">평생 ‘그 여인’만 그리는 화가, 제나 그리본 #여성예술가17</h3>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <div class="img-box">
+                  <img src="images/section-5-2.jpg" alt="배너이미지">
+                </div>
+                <div class="content">
+                  <p class="category">아트</p>
+                  <h3 class="subtitle">엠마 프렘페의 등잔 밑은 어둡지 않다 #여성예술가17</h3>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <div class="img-box">
+                  <img src="images/section-5-3.jpg" alt="배너이미지">
+                </div>
+                <div class="content">
+                  <p class="category">아트</p>
+                  <h3 class="subtitle">정희민, 회화의 경계를 빙글빙글 넘어서 #여성예술가17</h3>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="section-img-5__bg"></div>
+    </section>
+
+    <section class="section-img-6">
+      <div class="con mx-auto mt-8">
+        <h2 class="tit">FASHION</h2>
+        <div class="section-img-6__cont-wrap flex">
+          <div class="section-img-6__list-box">
+            <div class="post-flip">
+              <div class="post-list">
+                <ul class="flex-grid">
+                  <li>
+                    <a href="#">
+                      <div class="img-box">
+                        <img src="images/section-6-1.jpg" alt="배너이미지">
+                      </div>
+                      <div class="content">
+                        <p class="category">셀러브리티 스타일</p>
+                        <h3 class="subtitle">클래식은 빈틈 있게, 케이티 홈즈의 환절기 스타일링</h3>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <div class="img-box">
+                        <img src="images/section-6-2.jpg" alt="배너이미지">
+                      </div>
+                      <div class="content">
+                        <p class="category">셀러브리티 스타일</p>
+                        <h3 class="subtitle">릴리 콜린스가 공개한 동화 같은 웨딩 사진</h3>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <div class="img-box">
+                        <img src="images/section-6-3.jpg" alt="배너이미지">
+                      </div>
+                      <div class="content">
+                        <p class="category">Fashion</p>
+                        <h3 class="subtitle">알렉산더 맥퀸의 새로운 씰 백(Seal Bag) 런칭</h3>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <div class="img-box">
+                        <img src="images/section-6-4.jpg" alt="배너이미지">
+                      </div>
+                      <div class="content">
+                        <p class="category">패션 아이템</p>
+                        <h3 class="subtitle">이제는 리틀 블랙 드레스가 아닌 롱 블랙 드레스!</h3>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="section-img-6__main-img-box">
+            <div class="main-img-box flex">
+              <a href="#">
+                <div class="img-box">
+                  <img src="images/section-6.jpg" alt="배너이미지">
+                </div>
+                <div class="post-content">
+                  <p class="flex">
+                    <span>셀러브리티 스타일</span>
+                    <span>2023.09.01</span>
+                  </p>
+                  <h3>믿고 보는 클래식, 안젤리나 졸리의 애착템 리스트 5</h3>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-img-7">
+      <div class="con mx-auto mt-8">
+        <h2 class="tit">
+          LIFESTYLE
+        </h2>
+        <div class="post_list list_v2 con">
+          <ul class="flex">
+            <li>
+              <a href="#">
+                <div class="img-box">
+                  <img src="images/section-7-1.jpg" alt="배너이미지">
+                </div>
+                <div class="content">
+                  <p class="category">뷰 포인트</p>
+                  <h3 class="subtitle">덤폰의 조용한 부활</h3>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="img-box">
+                  <img src="images/section-7-2.jpeg" alt="배너이미지">
+                </div>
+                <div class="content">
+                  <p class="category">여행</p>
+                  <h3 class="subtitle">프리즈 위크! '아트캉스' 즐길 수 있는 호텔 3</h3>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="img-box">
+                  <img src="images/section-7-3.jpg" alt="배너이미지">
+                </div>
+                <div class="content">
+                  <p class="category">푸드</p>
+                  <h3 class="subtitle">푹신하고 달달하게! 프렌치토스트 맛집 4</h3>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="img-box">
+                  <img src="images/section-7-4.webp" alt="배너이미지">
+                </div>
+                <div class="content">
+                  <p class="category">여행</p>
+                  <h3 class="subtitle">제니가 선택한 사막의 럭셔리 리조트, 아만기리</h3>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-img-8">
+      <div class="con mx-auto mt-8">
+        <h2 class="tit">BEAUTY</h2>
+        <div class="section-img-8__cont-wrap flex">
+          <div class="section-img-8__main-img-box">
+            <div class="main-img-box flex">
+              <a href="#">
+                <div class="img-box">
+                  <img src="images/section-8.jpg" alt="배너이미지">
+                </div>
+                <div class="post-content">
+                  <p class="flex">
+                    <span>웰니스</span>
+                    <span>2023.09.04</span>
+                  </p>
+                  <h3>#VYP 여성 Y존의 본질적 의미를 찾아서</h3>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="section-img-8__list-box">
+            <div class="post-flip">
+              <div class="post-list">
+                <ul class="flex-grid">
+                  <li>
+                    <a href="#">
+                      <div class="img-box">
+                        <img src="images/section-8-1.jpg" alt="배너이미지">
+                      </div>
+                      <div class="content">
+                        <p class="category">뷰티 트렌드</p>
+                        <h3 class="subtitle">소피아 리치에게 배우는 럭셔리한 슬릭 번</h3>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <div class="img-box">
+                        <img src="images/section-8-2.jpeg" alt="배너이미지">
+                      </div>
+                      <div class="content">
+                        <p class="category">웰니스</p>
+                        <h3 class="subtitle">나의 '체형 만족도'는 높은 편일까?</h3>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <div class="img-box">
+                        <img src="images/section-8-3.jpg" alt="배너이미지">
+                      </div>
+                      <div class="content">
+                        <p class="category">웰니스</p>
+                        <h3 class="subtitle">#VYP 새 기준을 만들어가는 펨테크 선구자들</h3>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <div class="img-box">
+                        <img src="images/section-8-4.jpg" alt="배너이미지">
+                      </div>
+                      <div class="content">
+                        <p class="category">웰니스</p>
+                        <h3 class="subtitle">#VYP 자궁내막증을 앓아온 알렉사 청의 삶과 희망</h3>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-img-9">
+      <div class="con mx-auto mt-8">
+        <h2 class="tit">
+          LIFESTYLE
+        </h2>
+        <div class="post_list list_v2 con">
+          <ul class="flex">
+            <li>
+              <a href="#">
+                <div class="img-box">
+                  <img src="images/section-9-1.jpeg" alt="배너이미지">
+                </div>
+                <div class="content">
+                  <p class="category">아트</p>
+                  <h3 class="subtitle">현대미술 전시장으로 변모한 DMZ</h3>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="img-box">
+                  <img src="images/section-9-2.jpg" alt="배너이미지">
+                </div>
+                <div class="content">
+                  <p class="category">아트</p>
+                  <h3 class="subtitle">브레게의 예술 여정</h3>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="img-box">
+                  <img src="images/section-9-3.jpg" alt="배너이미지">
+                </div>
+                <div class="content">
+                  <p class="category">셀럽 뉴스</p>
+                  <h3 class="subtitle">블랙핑크 리사×크레이지 호스 파리</h3>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="img-box">
+                  <img src="images/section-9-4.jpg" alt="배너이미지">
+                </div>
+                <div class="content">
+                  <p class="category">아트</p>
+                  <h3 class="subtitle">엠마 프렘페의 등잔 밑은 어둡지 않다 #여성예술가17</h3>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-img-10">
+      <div class="con mx-auto">
+        <h2 class="tit">LATEST STORIES</h2>
+        <div class="post_list list_v2 flex">
+          <div class="section-img-10__list-box">
+            <ul class="flex-grid-1">
+              <li>
+                <a href="#">
+                  <div class="img-box">
+                    <img src="images/section-10-1.webp" alt="배너이미지">
+                  </div>
+                  <div class="content">
+                    <p class="category">패션 아이템</p>
+                    <h3 class="subtitle">최종! 올가을 가방 트렌드 10가지</h3>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="img-box">
+                    <img src="images/section-10-2.webp" alt="배너이미지">
+                  </div>
+                  <div class="content">
+                    <p class="category">셀러브리티 스타일</p>
+                    <h3 class="subtitle">다소 꾀죄죄한 릴리 로즈 뎁의 Z세대 열광 룩</h3>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="img-box">
+                    <img src="images/section-10-3.jpeg" alt="배너이미지">
+                  </div>
+                  <div class="content">
+                    <p class="category">셀러브리티 스타일</p>
+                    <h3 class="subtitle">클래식 캐주얼의 정석, 셀럽들의 랄프 로렌 볼캡 활용법</h3>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="img-box">
+                    <img src="images/section-10-4.jpg" alt="배너이미지">
+                  </div>
+                  <div class="content">
+                    <p class="category">패션 아이템</p>
+                    <h3 class="subtitle">친구에게 선물하기 좋은 에르메스의 아이템? #명품입문템</h3>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="img-box">
+                    <img src="images/section-10-5.jpg" alt="배너이미지">
+                  </div>
+                  <div class="content">
+                    <p class="category">Fashion</p>
+                    <h3 class="subtitle">올가을 단 하나의 립스틱만 선택해야 한다면?</h3>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="img-box">
+                    <img src="images/section-10-6.jpg" alt="배너이미지">
+                  </div>
+                  <div class="content">
+                    <p class="category">셀러브리티 스타일</p>
+                    <h3 class="subtitle">높은 만큼 아찔한 매력! 플랫폼 힐 마니아, 두아 리파</h3>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="img-box">
+                    <img src="images/section-10-7.jpg" alt="배너이미지">
+                  </div>
+                  <div class="content">
+                    <p class="category">셀러브리티 스타일</p>
+                    <h3 class="subtitle">가을에도 청순할 수 있어요</h3>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="img-box">
+                    <img src="images/section-10-8.jpg" alt="배너이미지">
+                  </div>
+                  <div class="content">
+                    <p class="category">셀러브리티 스타일</p>
+                    <h3 class="subtitle">밀라 요보비치보다 눈에 띄는 딸, 에버 앤더슨의 스타일</h3>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="img-box">
+                    <img src="images/section-10-9.jpg" alt="배너이미지">
+                  </div>
+                  <div class="content">
+                    <p class="category">패션 뉴스</p>
+                    <h3 class="subtitle">STONE ISLAND DNA</h3>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="img-box">
+                    <img src="images/section-10-10.jpg" alt="배너이미지">
+                  </div>
+                  <div class="content">
+                    <p class="category">패션 아이템</p>
+                    <h3 class="subtitle">부츠로 빛나는 법</h3>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="img-box">
+                    <img src="images/section-10-11.jpg" alt="배너이미지">
+                  </div>
+                  <div class="content">
+                    <p class="category">패션 아이템</p>
+                    <h3 class="subtitle">스웨트셔츠, 이제 밖에서도 입어요</h3>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="img-box">
+                    <img src="images/section-10-12.jpg" alt="배너이미지">
+                  </div>
+                  <div class="content">
+                    <p class="category">셀러브리티 스타일</p>
+                    <h3 class="subtitle">베니스영화제에서 가장 주목받은 커플</h3>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="google_image_div">
+            <div class="img-box mx-auto">
+              <a href="#">
+                <img src="images/section-10-side.jpg" alt="구글이미지">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+
+  </section>
+
+  <div class="footer">
+    <div class="con mx-auto">
+      <a href="#" class="logo">
+        <img src="images/footer_logo.svg" alt="로고이미지">
+      </a>
+      <ul class="link_list">
+        <li>
+          <a href="#">
+            정기구독
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            회사소개
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            광고/제휴
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            개인정보 처리방침
+          </a>
+        </li>
+      </ul>
+      <p class="copyright">
+        VOGUE.CO.KR IS OPERATED BY DOOSAN MAGAZINE
+      </p>
+    </div>
+  </div>
+</body>
+
+</html>
