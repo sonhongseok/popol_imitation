@@ -88,6 +88,10 @@ body {
   overflow-x: hidden;
 }
 
+html>body {
+  text-underline-position: under;
+}
+
 /* 라이브러리 */
 .con {
   max-width: 1600px;
@@ -120,6 +124,10 @@ body {
 }
 
 /* pc탑바 메뉴 작업시작 */
+.pc-top-bar-menu>ul>li:hover>a {
+  text-decoration: underline;
+}
+
 .pc-top-bar-menu>ul>li>a {
   display: block;
   padding: 20px;
@@ -180,6 +188,7 @@ body {
 }
 
 .subtitle {
+  /* 	margin-top: 50px; */
   font-size: 1.375rem;
   font-weight: bold;
   line-height: 1.5;
@@ -195,6 +204,10 @@ body {
 .section-img-2>.con>.post-list>.flex-grid {
   --y-gap: 100px;
   --x-gap: 100px;
+}
+
+.section-img-2>.con>.post-list>.flex-grid>li:hover>a {
+  text-decoration: underline;
 }
 
 /* 스와이퍼 이미지 */
@@ -240,6 +253,10 @@ body {
 
 .section-img-3 .swiper-con .swiper-wrapper .swiper-slide {
   height: 100%;
+}
+
+.section-img-3 .swiper-con .swiper-wrapper .swiper-slide:hover>a {
+  text-decoration: underline;
 }
 
 .swiper-btn-box {
@@ -309,9 +326,11 @@ line-height: 1.5;
   display: block;
   height: 100%;
   margin: 0 10px;
-  /* 	border: 2px solid red; */
 }
 
+.section-img-4 .con .list_v2 ul li:hover a {
+  text-decoration: underline;
+}
 
 .section-img-4 .con .list_v2 ul li a img {
   display: block;
@@ -374,7 +393,10 @@ line-height: 1.5;
 .section-img-5>.inner>.list_v2>ul>li>a {
   display: block;
   margin: 0 10px;
-  /* 	border: 2px solid blue; */
+}
+
+.section-img-5>.inner>.list_v2>ul>li:hover>a {
+  text-decoration: underline;
 }
 
 .section-img-5 .inner .img-box img {
@@ -397,6 +419,10 @@ line-height: 1.5;
 
 .section-img-6__list-box .post-flip>.post-list>.flex-grid>li {
   width: calc(50% - 30px);
+}
+
+.section-img-6__list-box .post-flip>.post-list>.flex-grid>li:hover>a {
+  text-decoration: underline;
 }
 
 .section-img-6__list-box .post-flip>.post-list>.img-box {
@@ -473,14 +499,16 @@ line-height: 1.5;
   display: block;
   height: 100%;
   margin: 0 10px;
-  /* 	border: 2px solid red; */
+}
+
+.section-img-7 .con .list_v2 ul li:hover a {
+  text-decoration: underline;
 }
 
 
 .section-img-7 .con .list_v2 ul li a img {
   display: block;
   object-fit: cover;
-  /* 	border: 2px solid blue; */
 }
 
 /* 섹션7 이미지 작업 끝 */
@@ -568,6 +596,10 @@ line-height: 1.5;
   color: #fff;
 }
 
+.section-img-8__list-box ul>li:hover>a {
+  text-decoration: underline;
+}
+
 /* 섹션8 이미지 작업 끝 */
 
 /* 섹션9 이미지 작업 시작 */
@@ -579,7 +611,10 @@ line-height: 1.5;
   display: block;
   height: 100%;
   margin: 0 10px;
-  /* 	border: 2px solid red; */
+}
+
+.section-img-9 .con .list_v2 ul li:hover a {
+  text-decoration: underline;
 }
 
 
@@ -601,13 +636,16 @@ line-height: 1.5;
   --x-gap: 30px;
 }
 
-
-.section-img-10__list-box .flex-grid-1 ul li {
+.section-img-10__list-box .flex-grid-1 li {
   width: calc(33.333% - 30px);
 }
 
-.section-img-10__list-box .flex-grid-1 ul li a {
+.section-img-10__list-box .flex-grid-1 li a {
   display: block;
+}
+
+.section-img-10__list-box .flex-grid-1>li:hover>a {
+  text-decoration: underline;
 }
 
 .section-img-10__list-box .flex-grid-1 ul li a img {
@@ -659,7 +697,7 @@ line-height: 1.5;
   color: #fff;
 }
 
-.footer>.con>.link_list>li::after {
+.footer>.con>.link_list>li:not(:last-child)>a::after {
   display: inline-block;
   width: 1px;
   height: 12px;
